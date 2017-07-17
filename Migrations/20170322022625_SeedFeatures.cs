@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Vega.Migrations
 {
-    public partial class SeedFeature : Migration
+    public partial class SeedFeatures : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -5,7 +5,6 @@ namespace vega.Controllers.Resources
 {
     public class MakeResource
     {
-        
         public int Id { get; set; }
         public string Name { get; set; }
         public ICollection<ModelResource> Models { get; set; }
@@ -14,5 +13,6 @@ namespace vega.Controllers.Resources
         {
             Models = new Collection<ModelResource>();
         }
+        
     }
 }

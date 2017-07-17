@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 using vega.Persistence;
 using AutoMapper;
 
-namespace WebApplicationBasic
+namespace Vega
 {
     public class Startup
     {
@@ -32,7 +32,9 @@ namespace WebApplicationBasic
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper();
+
             services.AddDbContext<VegaDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
+
             // Add framework services.
             services.AddMvc();
         }
